@@ -183,6 +183,9 @@ PlaygroundPage.current.liveView = nav
 
 **RESULT:**
 
+![ezgif com-resize](https://user-images.githubusercontent.com/21070922/48664452-ace55380-eac4-11e8-98cb-541c45556527.gif)
+
+
 **CHAPTER 5:**
 
 ```swift
