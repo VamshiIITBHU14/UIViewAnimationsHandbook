@@ -4,6 +4,9 @@ How to use:
 
 Just pick up the chapter you want and copy paste the code in Xcode playground and run the program. Make sure the **Assistant Editor (Live View)** is turned on. Please refer to the screenshot below.
 
+<img width="1432" alt="screen shot 2018-11-17 at 10 22 44 pm" src="https://user-images.githubusercontent.com/21070922/48663530-a7354100-eab7-11e8-84ff-768b16f3ba4e.png">
+
+
 **Chapter1:**
 
 ```swift
