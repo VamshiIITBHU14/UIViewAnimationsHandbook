@@ -1,6 +1,6 @@
 # UIViewAnimationsHandbook
 
-How to use:
+**How to use:**
 
 Just pick up the chapter you want and copy paste the code in Xcode playground and run the program. Make sure the **Assistant Editor (Live View)** is turned on. Please refer to the screenshot below.
 
@@ -41,4 +41,7 @@ let nav = UINavigationController(rootViewController: vc)
 PlaygroundPage.current.liveView = nav
 
 ```
+
+**RESULT:**
+
 ![a1](https://user-images.githubusercontent.com/21070922/48663479-ea42e480-eab6-11e8-8f2d-f82195394530.gif)
