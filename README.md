@@ -1,5 +1,9 @@
 # UIViewAnimationsHandbook
 
+How to use:
+
+Just pick up the chapter you want and copy paste the code in Xcode playground and run the program. Make sure the **Assistant Editor** is turned on. Please refer to the screenshot below.
+
 **Chapter1:**
 
 ```swift
