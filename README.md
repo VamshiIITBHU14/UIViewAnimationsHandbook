@@ -34,4 +34,4 @@ let nav = UINavigationController(rootViewController: vc)
 PlaygroundPage.current.liveView = nav
 
 ```
-
+![a1](https://user-images.githubusercontent.com/21070922/48663479-ea42e480-eab6-11e8-8f2d-f82195394530.gif)
