@@ -563,3 +563,6 @@ PlaygroundPage.current.liveView = nav
 ```
 
 **RESULT:**
+
+![ezgif com-resize](https://user-images.githubusercontent.com/21070922/48673732-7feb7c00-eb6a-11e8-9168-4ee86ab74525.gif)
+
