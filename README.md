@@ -2,7 +2,7 @@
 
 **HOW TO USE:**
 
-Just pick up the chapter you want and copy paste the code in Xcode playground and run the program. Make sure the **Assistant Editor (Live View)** is turned on. Please refer to the screenshot below.
+Just pick the chapter you want in Xcode playground and Run the program. Make sure the **Assistant Editor (Live View)** is turned on. Please refer to the screenshot below.
 
 <img width="1432" alt="screen shot 2018-11-17 at 10 22 44 pm" src="https://user-images.githubusercontent.com/21070922/48663530-a7354100-eab7-11e8-84ff-768b16f3ba4e.png">
 
@@ -425,46 +425,38 @@ import UIKit
 import PlaygroundSupport
 
 class MainViewController : UIViewController{
-    
     var demoLabel : UILabel!
-    
     override func viewDidLoad() {
         view.backgroundColor = UIColor.blue
-        title = "UIView Animations"
-        
-        demoLabel = UILabel(frame: CGRect(x: 50, y: 120, width: 180, height: 60))
+        title = "X-Axis Alpha Transition"
+        demoLabel = UILabel(frame: CGRect(x: 25, y: 120, width: 180, height: 60))
         demoLabel.backgroundColor = UIColor.green
         demoLabel.text = "Before Transition"
         demoLabel.textAlignment = .center
         demoLabel.layer.cornerRadius = 12
         demoLabel.layer.masksToBounds = true
         self.view.addSubview(demoLabel)
-        
     }
-    
-    
     override func viewDidAppear(_ animated: Bool) {
         let offsetDeparting = CGPoint(
-            x: CGFloat(15),
+            x: CGFloat(150),
             y: 0.0)
         XAxisTransition(label: demoLabel, text: "After Transition",
                         offset: offsetDeparting)
     }
-    
     func XAxisTransition(label: UILabel, text: String, offset: CGPoint) {
-        let tempLabel = UILabel(frame: label.frame)
-        tempLabel.text = text
-        tempLabel.font = label.font
-        tempLabel.textAlignment = label.textAlignment
-        tempLabel.textColor = label.textColor
-        tempLabel.backgroundColor = .clear
-        tempLabel.transform = CGAffineTransform(translationX: offset.x, y:
+        let secondLabel = UILabel(frame: label.frame)
+        secondLabel.text = text
+        secondLabel.font = label.font
+        secondLabel.textAlignment = label.textAlignment
+        secondLabel.textColor = label.textColor
+        secondLabel.backgroundColor = .clear
+        secondLabel.transform = CGAffineTransform(translationX: offset.x, y:
             offset.y)
-        tempLabel.alpha = 0
-        view.addSubview(tempLabel)
-        
+        secondLabel.alpha = 0
+        view.addSubview(secondLabel)
         UIView.animate(withDuration: 2.5, delay: 0.0,
-                       options: .curveEaseIn,
+                       options: [.repeat, .autoreverse, .curveEaseInOut],
                        animations: {
                         label.transform = CGAffineTransform(translationX: offset.x, y:
                             offset.y)
@@ -472,21 +464,15 @@ class MainViewController : UIViewController{
         },
                        completion: nil
         )
-        
-        UIView.animate(withDuration: 2.5, delay: 0.0, options: .curveEaseIn,
+        UIView.animate(withDuration: 2.5, delay: 0.0, options: [.repeat, .autoreverse, .curveEaseInOut],
                        animations: {
-                        tempLabel.transform = .identity
-                        tempLabel.alpha = 1.0
+                        secondLabel.transform = .identity
+                        secondLabel.alpha = 1.0
         },
-                       completion: {_ in
-                        tempLabel.removeFromSuperview()
-                        label.text = text
-                        label.alpha = 1.0
-                        label.transform = .identity
-        } )
+                       completion: nil
+        )
     }
-    
-    func simpleLabelTextTransition(){
+    func simpleLabelTextTransition() {
         UIView.transition(with: demoLabel, duration: 2.0,
                           options: .transitionCrossDissolve,
                           animations: {

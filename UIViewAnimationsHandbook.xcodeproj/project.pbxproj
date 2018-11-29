@@ -1,0 +1,72 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E1AE1F2321AFB3900016AC84 /* UIViewAnimationsHandbook.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIViewAnimationsHandbook.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E1CD1D1721AD060D00C2FF32 = {
+			isa = PBXGroup;
+			children = (
+				E1AE1F2321AFB3900016AC84 /* UIViewAnimationsHandbook.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E1CD1D1821AD060D00C2FF32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = E1CD1D1B21AD060D00C2FF32 /* Build configuration list for PBXProject "UIViewAnimationsHandbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1CD1D1721AD060D00C2FF32;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E1CD1D1C21AD060D00C2FF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E1CD1D1D21AD060D00C2FF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1CD1D1B21AD060D00C2FF32 /* Build configuration list for PBXProject "UIViewAnimationsHandbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD1D1C21AD060D00C2FF32 /* Debug */,
+				E1CD1D1D21AD060D00C2FF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1CD1D1821AD060D00C2FF32 /* Project object */;
+}

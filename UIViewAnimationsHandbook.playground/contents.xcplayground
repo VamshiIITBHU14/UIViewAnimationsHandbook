@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='Chapter 1'/>
+        <page name='Chapter 2'/>
+        <page name='Chapter 3'/>
+        <page name='Chapter 4'/>
+        <page name='Chapter 5'/>
+        <page name='Chapter 6'/>
+        <page name='Chapter 7'/>
+        <page name='Chatper 8'/>
+        <page name='Chapter 9'/>
+        <page name='Chapter 10'/>
+        <page name='Help'/>
+    </pages>
+</playground>
